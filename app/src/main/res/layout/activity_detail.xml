@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_ripple_oval"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:fontFamily="@font/rutan_bold"
+        android:gravity="center"
+        android:maxLines="1"
+        android:minHeight="50dp"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/dimen_text_large"
+        app:autoSizeMaxTextSize="@dimen/dimen_text_large"
+        app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+        app:autoSizeStepGranularity="0.5sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/txtName" />
+
+    <LinearLayout
+        android:id="@+id/contFollower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgUser">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtFollowers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_weight="1"
+            android:fontFamily="@font/rutan_bold"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/dimen_text_regular"
+            app:autoSizeMaxTextSize="@dimen/dimen_text_regular"
+            app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+            app:autoSizeStepGranularity="0.5sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtFollowing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_weight="1"
+            android:fontFamily="@font/rutan_bold"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/dimen_text_regular"
+            app:autoSizeMaxTextSize="@dimen/dimen_text_regular"
+            app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+            app:autoSizeStepGranularity="0.5sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        android:background="@drawable/bg_edit_text"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10"
+        app:layout_constraintTop_toBottomOf="@id/contFollower">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSmallName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_weight="1"
+            android:fontFamily="@font/rutan"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/dimen_text_regular"
+            app:autoSizeMaxTextSize="@dimen/dimen_text_regular"
+            app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+            app:autoSizeStepGranularity="0.5sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contFollower" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_weight="1"
+            android:fontFamily="@font/rutan"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/dimen_text_regular"
+            app:autoSizeMaxTextSize="@dimen/dimen_text_regular"
+            app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+            app:autoSizeStepGranularity="0.5sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contFollower" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtBlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5"
+            android:layout_marginEnd="@dimen/dimen_5"
+            android:layout_weight="1"
+            android:fontFamily="@font/rutan"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/dimen_text_regular"
+            app:autoSizeMaxTextSize="@dimen/dimen_text_regular"
+            app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+            app:autoSizeStepGranularity="0.5sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contFollower" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtLblNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:layout_weight="1"
+        android:fontFamily="@font/rutan_bold"
+        android:maxLines="1"
+        android:text="@string/str_notes"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/dimen_text_regular"
+        app:autoSizeMaxTextSize="@dimen/dimen_text_regular"
+        app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+        app:autoSizeStepGranularity="0.5sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contDetail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:layout_weight="1"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/rutan"
+        android:gravity="start|top"
+        android:minHeight="150dp"
+        android:padding="@dimen/dimen_5"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/dimen_text_regular"
+        app:autoSizeMaxTextSize="@dimen/dimen_text_regular"
+        app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+        app:autoSizeStepGranularity="0.5sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLblNote" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:fontFamily="@font/rutan_bold"
+        android:maxLines="1"
+        android:text="@string/str_save"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/dimen_text_regular"
+        app:autoSizeMaxTextSize="@dimen/dimen_text_regular"
+        app:autoSizeMinTextSize="@dimen/dimen_text_size_tiny"
+        app:autoSizeStepGranularity="0.5sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

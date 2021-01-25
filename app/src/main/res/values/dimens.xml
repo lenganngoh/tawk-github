@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_fading_edge">25dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_profile_image_header_default_height">50dp</dimen>
+    <dimen name="dimen_text_small">16sp</dimen>
+    <dimen name="dimen_text_regular">18sp</dimen>
+    <dimen name="dimen_text_size_tiny">12sp</dimen>
+    <dimen name="dimen_text_large">25sp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+</resources>

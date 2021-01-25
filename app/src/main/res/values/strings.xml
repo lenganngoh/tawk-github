@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">tawk-github-user</string>
+    <string name="str_link_colon">Link:</string>
+    <string name="str_notes">Notes</string>
+    <string name="str_followers">Followers</string>
+    <string name="str_following">Following</string>
+    <string name="str_search_by_username_note">Search by username or note</string>
+    <string name="str_name">Name</string>
+    <string name="str_company">Company</string>
+    <string name="str_blog">Blog</string>
+    <string name="str_save">Save</string>
+</resources>
